@@ -219,8 +219,7 @@ public class NewJFrame extends javax.swing.JFrame {
                                                 .addComponent(jLabel23))
                                             .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel21))))
-                                .addGap(46, 46, 46)
-                                .addComponent(jButton1))
+                                .addGap(119, 119, 119))
                             .addComponent(jSeparator3))
                         .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -238,8 +237,7 @@ public class NewJFrame extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jComboBox1, 0, 135, Short.MAX_VALUE)
@@ -247,9 +245,7 @@ public class NewJFrame extends javax.swing.JFrame {
                                 .addGap(29, 29, 29)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 259, Short.MAX_VALUE)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -268,11 +264,15 @@ public class NewJFrame extends javax.swing.JFrame {
                                     .addComponent(jLabel12)
                                     .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(142, 142, 142))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(67, Short.MAX_VALUE)
+                .addGap(10, 10, 10)
                 .addComponent(jLabel7)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -348,9 +348,9 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addComponent(jCheckBox4))
+                .addComponent(jCheckBox4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addComponent(jButton1)
                 .addContainerGap())
         );
 
@@ -402,9 +402,7 @@ public class NewJFrame extends javax.swing.JFrame {
                             .addComponent(jTextField17)
                             .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2)))
+                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -422,9 +420,9 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton3)
+                    .addComponent(jButton2))
                 .addContainerGap())
         );
 
@@ -487,7 +485,7 @@ public class NewJFrame extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addGap(0, 388, Short.MAX_VALUE)
+                        .addGap(0, 394, Short.MAX_VALUE)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                                 .addComponent(jLabel5)
@@ -543,10 +541,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    private void clearBox(javax.swing.JComboBox box) {
-        box.removeAllItems();
-        box.setSelectedItem(null);
-    }
+
     private void pageBack(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pageBack
         jTabbedPane1.setSelectedIndex(--currentPage);
     }//GEN-LAST:event_pageBack
@@ -581,21 +576,14 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
 
-        clearBox(jComboBox2);
         if (jComboBox1.getSelectedItem().equals("Gaisras")) {
-            jComboBox2.addItem("Smulkus gaisras");
-            jComboBox2.addItem("Namas");
-            jComboBox2.addItem("Pramoninis pastatas");
+            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] {"Smulkus gaisras", "Namas", "Pramoninis pastatas"}));
         } else if (jComboBox1.getSelectedItem().equals("Eismo įvykis")) {
-            jComboBox2.addItem("Avarija");
-            jComboBox2.addItem("Avarija su sužalojimais");
+            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] {"Avarija", "Avarija su sužalojimais"}));
         } else if (jComboBox1.getSelectedItem().equals("Vagystė")) {
-            jComboBox2.addItem("Vagystė iš buto");
-            jComboBox2.addItem("Vagystė iš automobilio");
-            jComboBox2.addItem("Kišenvagystė");
+            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] {"Vagystė iš buto", "Vagystė iš automobilio", "Kišenvagystė"}));
         } else if (jComboBox1.getSelectedItem().equals("Kūno sužalojimas")) {
-            jComboBox2.addItem("Smulkūs sužalojimas");
-            jComboBox2.addItem("Gyvybei pavojingas sužalojimas");
+            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] {"Smulkūs sužalojimai", "Gyvybei pavojingas sužalojimas"}));
         }
     }//GEN-LAST:event_jComboBox1ActionPerformed
     /**
