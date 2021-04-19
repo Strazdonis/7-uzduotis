@@ -72,6 +72,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jCheckBox4 = new javax.swing.JCheckBox();
         jSeparator3 = new javax.swing.JSeparator();
+        jButton6 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
@@ -168,6 +169,13 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        jButton6.setText("Žinynas");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -177,7 +185,9 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel7)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton6)
+                        .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -272,8 +282,10 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel7)
+                .addGap(9, 9, 9)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(jButton6))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -349,7 +361,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22)
                 .addComponent(jCheckBox4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );
@@ -518,7 +530,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addComponent(jLabel5)
                 .addGap(18, 18, 18)
-                .addComponent(PapildomaInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
+                .addComponent(PapildomaInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 316, Short.MAX_VALUE)
                 .addGap(27, 27, 27)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton4)
@@ -553,11 +565,11 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void submit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submit
 
-        if(jTextField12.getText().length() == 0) {
+        if (jTextField12.getText().length() == 0) {
             jTabbedPane1.setSelectedIndex(0);
             currentPage = 0;
             jTextField12.requestFocusInWindow();
-        } else if(jTextField11.getText().length() == 0) {
+        } else if (jTextField11.getText().length() == 0) {
             jTabbedPane1.setSelectedIndex(0);
             currentPage = 0;
             jTextField11.requestFocusInWindow();
@@ -577,15 +589,23 @@ public class NewJFrame extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
 
         if (jComboBox1.getSelectedItem().equals("Gaisras")) {
-            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] {"Smulkus gaisras", "Namas", "Pramoninis pastatas"}));
+            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[]{"Smulkus gaisras", "Namas", "Pramoninis pastatas"}));
         } else if (jComboBox1.getSelectedItem().equals("Eismo įvykis")) {
-            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] {"Avarija", "Avarija su sužalojimais"}));
+            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[]{"Avarija", "Avarija su sužalojimais"}));
         } else if (jComboBox1.getSelectedItem().equals("Vagystė")) {
-            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] {"Vagystė iš buto", "Vagystė iš automobilio", "Kišenvagystė"}));
+            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[]{"Vagystė iš buto", "Vagystė iš automobilio", "Kišenvagystė"}));
         } else if (jComboBox1.getSelectedItem().equals("Kūno sužalojimas")) {
-            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] {"Smulkūs sužalojimai", "Gyvybei pavojingas sužalojimas"}));
+            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[]{"Smulkūs sužalojimai", "Gyvybei pavojingas sužalojimas"}));
         }
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+
+        if (zin == null) {
+            zin = new Zinynas();
+        }
+        zin.setVisible(true);
+    }//GEN-LAST:event_jButton6ActionPerformed
     /**
      * @param args the command line arguments
      */
@@ -629,6 +649,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
@@ -669,6 +690,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private  Zinynas  zin;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
